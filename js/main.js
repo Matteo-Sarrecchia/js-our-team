@@ -47,11 +47,11 @@ for (let i = 0; i < personTeam.length; i++ ){
     let objIesimo = personTeam[i]
     console.log(objIesimo)
 
-    for (key in objIesimo){
-        // console.log(objIesimo[key])
         let square = document.createElement("div")
         square.classList.add("square")
-        square.innerHTML = objIesimo[key]
-        container.append(square) 
-    }   
+        container.append(square)
+        square.innerHTML = 
+        `<img src="img/${objIesimo.img}" alt=""
+        <h2>${objIesimo.nome}</h2>
+        <div>${objIesimo.ruolo}</div>`
 }
