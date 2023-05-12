@@ -1,3 +1,5 @@
+// VARIBILI GLOBALI
+const headerRow = document.getElementById("header-row")
 const container = document.getElementById("container")
 
 // creo array per contenere oggetti
@@ -40,7 +42,10 @@ const personTeam = [
 
 ];
 
-console.log(personTeam)
+const squareHeader =document.createElement("div");
+headerRow.append(squareHeader);
+squareHeader.innerHTML = `<h2>OUR TEAM</h2>
+<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum fugit sapiente blanditiis delectus eum id labore dolor, earum iure incidunt facere, quis non nesciunt consequuntur, quidem assumenda sit cumque.</div>`
 
 
 for (let i = 0; i < personTeam.length; i++ ){
@@ -51,7 +56,7 @@ for (let i = 0; i < personTeam.length; i++ ){
         square.classList.add("square")
         container.append(square)
         square.innerHTML = 
-        `<img src="img/${objIesimo.img}" alt=""
-        <h2>${objIesimo.nome}</h2>
+        `<img src="img/${objIesimo.img}" alt="">
+        <h3>${objIesimo.nome}</h3>
         <div>${objIesimo.ruolo}</div>`
 }
